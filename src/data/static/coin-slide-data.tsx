@@ -23,7 +23,7 @@ export const coinSlideData = [
     symbol: 'ZNT',
     balance: '1.2345',
     usdBalance: '1,032.24',
-    logo: TetherImage,
+    logo: ZntImage,
     change: '-1.5%',
     isChangePositive: false,
     color: '#00DAFF',
