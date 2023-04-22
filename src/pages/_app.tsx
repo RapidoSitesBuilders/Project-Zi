@@ -32,15 +32,15 @@ type AppPropsWithLayout = AppProps & {
 
 function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
   useEffect(() => {
-    setBackground()
+    setBackground();
   });
-  
+
   const setBackground = () => {
-      const body = document.querySelector('body')
-      if(body) {
-        body.style.backgroundImage = `url(${location.origin}/images/banner_bg.jpg)`
-      }
-  }
+    const body = document.querySelector('body');
+    if (body) {
+      body.style.backgroundImage = `url(${location.origin}/images/banner_bg.jpg)`;
+    }
+  };
   //could remove this if you don't need to page level layout
   const getLayout = Component.getLayout ?? ((page) => page);
   const [queryClient] = useState(() => new QueryClient());
@@ -52,7 +52,7 @@ function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
           name="viewport"
           content="width=device-width, initial-scale=1 maximum-scale=1"
         />
-        <title>Zi-Network</title>
+        <title>Zi Network App</title>
       </Head>
       <QueryClientProvider client={queryClient}>
         <ThemeProvider
