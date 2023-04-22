@@ -15,6 +15,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import '@/assets/css/scrollbar.css';
 import '@/assets/css/globals.css';
+import '@/assets/css/additional.css';
 import '@/assets/css/range-slider.css';
 import { useState, useEffect, use } from 'react';
 
