@@ -3,6 +3,7 @@ import BitcoinImage from '@/assets/images/coin/bitcoin.svg';
 import TetherImage from '@/assets/images/coin/tether.svg';
 import CardanoImage from '@/assets/images/coin/cardano.svg';
 import BinanceImage from '@/assets/images/coin/binance.svg';
+import ZntImage from '@/assets/images/coin/znt.png';
 
 export const coinSlideData = [
   {
@@ -45,6 +46,17 @@ export const coinSlideData = [
     balance: '240.55',
     usdBalance: '340.24',
     logo: BinanceImage,
+    change: '+1.5%',
+    isChangePositive: true,
+    color: '#FBF5D5',
+  },
+  {
+    id: '4',
+    name: 'Zi Network',
+    symbol: 'ZNT',
+    balance: '240.55',
+    usdBalance: '340.24',
+    logo: ZntImage,
     change: '+1.5%',
     isChangePositive: true,
     color: '#FBF5D5',
