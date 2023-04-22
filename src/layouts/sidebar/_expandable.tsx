@@ -14,7 +14,7 @@ import { useClickAway } from '@/lib/hooks/use-click-away';
 import { menuItems } from '@/layouts/sidebar/_menu-items';
 import routes from '@/config/routes';
 //images
-import AuthorImage from '@/assets/images/author.jpg';
+import AuthorImage from '@/assets/images/zeke.png';
 
 export default function Sidebar({ className }: { className?: string }) {
   const router = useRouter();
@@ -147,11 +147,7 @@ export default function Sidebar({ className }: { className?: string }) {
                 })
               }
             >
-              <AuthorCard
-                image={AuthorImage}
-                name="Cameron Williamson"
-                role="admin"
-              />
+              <AuthorCard image={AuthorImage} name="ZEKE" role="admin" />
             </motion.div>
           </div>
         )}
