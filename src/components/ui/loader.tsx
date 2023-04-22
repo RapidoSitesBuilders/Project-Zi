@@ -56,6 +56,7 @@ export default function Loader({
           handleVariantClasses(variant, size),
           sizes[size]
         )}
+        style={{background: '#00c4f4'}}
       />
       <span
         className={cn(
@@ -63,6 +64,7 @@ export default function Loader({
           handleVariantClasses(variant, size),
           sizes[size]
         )}
+        style={{background: '#00c4f4'}}
       />
       <span
         className={cn(
@@ -70,6 +72,7 @@ export default function Loader({
           handleVariantClasses(variant, size),
           sizes[size]
         )}
+        style={{background: '#00c4f4'}}
       />
       {variant === 'moveUp' && !showOnlyThreeDots ? (
         <span
@@ -78,6 +81,7 @@ export default function Loader({
             handleVariantClasses(variant, size),
             sizes[size]
           )}
+          style={{background: '#00c4f4'}}
         />
       ) : null}
     </Component>
