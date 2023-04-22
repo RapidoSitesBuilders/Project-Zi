@@ -3,3 +3,11 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+.connect-btn {
+    border: solid 2px #00C4F4;
+}
+
+.connect-btn:hover {
+    background-color: #00C4F4;
+}
