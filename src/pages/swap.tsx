@@ -14,8 +14,8 @@ const SwapPage: NextPageWithLayout = () => {
   return (
     <>
       <NextSeo
-        title="Farms"
-        description="Criptic - React Next Web3 NFT Crypto Dashboard Template"
+        title="Swap"
+        description="Zi-Network – Next-Gen Blockchain & Crypto Ecosystem"
       />
       <Trade>
         <div className="mb-5 border-b border-dashed border-gray-200 pb-5 dark:border-gray-800 xs:mb-7 xs:pb-6">
@@ -28,10 +28,10 @@ const SwapPage: NextPageWithLayout = () => {
             <CoinInput
               label={'From'}
               exchangeRate={0.0}
-              defaultCoinIndex={0}
+              defaultCoinIndex={3}
               getCoinValue={(data) => console.log('From coin value:', data)}
             />
-            <div className="absolute top-1/2 left-1/2 z-[1] -mt-4 -ml-4 rounded-full bg-white shadow-large dark:bg-gray-600">
+            <div className="absolute left-1/2 top-1/2 z-[1] -ml-4 -mt-4 rounded-full bg-white shadow-large dark:bg-gray-600">
               <Button
                 size="mini"
                 color="gray"
@@ -56,7 +56,7 @@ const SwapPage: NextPageWithLayout = () => {
           <TransactionInfo label={'Offered by'} />
           <TransactionInfo label={'Price Slippage'} value={'1%'} />
           <TransactionInfo label={'Network Fee'} />
-          <TransactionInfo label={'Criptic Fee'} />
+          <TransactionInfo label={'Zi-Network Fee'} />
         </div>
         <Button
           size="large"

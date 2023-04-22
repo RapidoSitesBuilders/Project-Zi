@@ -49,6 +49,13 @@ export const coinList = [
     name: 'Doge Coin',
     price: 0.07,
   },
+
+  {
+    icon: <Doge />,
+    code: 'ZNT',
+    name: 'Zi-Network',
+    price: 0.05,
+  },
 ];
 
 export const CoinExplore = [
