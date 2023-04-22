@@ -45,7 +45,7 @@ const SwapPage: NextPageWithLayout = () => {
             <CoinInput
               label={'To'}
               exchangeRate={0.0}
-              defaultCoinIndex={1}
+              defaultCoinIndex={7}
               getCoinValue={(data) => console.log('To coin value:', data)}
             />
           </div>
