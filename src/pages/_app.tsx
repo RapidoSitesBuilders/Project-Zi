@@ -16,7 +16,7 @@ import 'swiper/css/pagination';
 import '@/assets/css/scrollbar.css';
 import '@/assets/css/globals.css';
 import '@/assets/css/range-slider.css';
-import { useState } from 'react';
+import { useState, useEffect, use } from 'react';
 
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
@@ -30,6 +30,9 @@ type AppPropsWithLayout = AppProps & {
 // });
 
 function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
+  useEffect(()=>{
+    console.log(123)    
+  })
   //could remove this if you don't need to page level layout
   const getLayout = Component.getLayout ?? ((page) => page);
   const [queryClient] = useState(() => new QueryClient());
@@ -41,19 +44,19 @@ function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
           name="viewport"
           content="width=device-width, initial-scale=1 maximum-scale=1"
         />
-        <title>Criptic - React Next Web3 NFT Crypto Dashboard Template</title>
+        <title>Zi Network App</title>
       </Head>
       <QueryClientProvider client={queryClient}>
         <ThemeProvider
           attribute="class"
           enableSystem={false}
-          defaultTheme="light"
+          defaultTheme="dark"
         >
           <WalletProvider>
             {/* <div className={`${firaCode.variable} font-body`}> */}
             {getLayout(<Component {...pageProps} />)}
-            <SettingsButton />
-            <SettingsDrawer />
+            {/* <SettingsButton /> */}
+            {/* <SettingsDrawer /> */}
             <ModalsContainer />
             <DrawersContainer />
             {/* </div> */}
