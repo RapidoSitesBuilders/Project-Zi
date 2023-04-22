@@ -45,7 +45,7 @@ const SwapPage: NextPageWithLayout = () => {
             <CoinInput
               label={'To'}
               exchangeRate={0.0}
-              defaultCoinIndex={1}
+              defaultCoinIndex={7}
               getCoinValue={(data) => console.log('To coin value:', data)}
             />
           </div>
@@ -56,7 +56,7 @@ const SwapPage: NextPageWithLayout = () => {
           <TransactionInfo label={'Offered by'} />
           <TransactionInfo label={'Price Slippage'} value={'1%'} />
           <TransactionInfo label={'Network Fee'} />
-          <TransactionInfo label={'Zi-Network Fee'} />
+          <TransactionInfo label={'Zi-Network Fee'} value={'0.5%'} />
         </div>
         <Button
           size="large"

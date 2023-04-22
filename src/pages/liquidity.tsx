@@ -21,10 +21,10 @@ const LiquidityPage: NextPageWithLayout = () => {
             <CoinInput
               label={'From'}
               exchangeRate={0.0}
-              defaultCoinIndex={0}
+              defaultCoinIndex={3}
               getCoinValue={(data) => console.log('From coin value:', data)}
             />
-            <div className="absolute top-1/2 left-1/2 z-[1] -mt-4 -ml-4 rounded-full bg-white shadow-large dark:bg-gray-600">
+            <div className="absolute left-1/2 top-1/2 z-[1] -ml-4 -mt-4 rounded-full bg-white shadow-large dark:bg-gray-600">
               <Button
                 size="mini"
                 color="gray"
@@ -37,7 +37,7 @@ const LiquidityPage: NextPageWithLayout = () => {
             <CoinInput
               label={'To'}
               exchangeRate={0.0}
-              defaultCoinIndex={1}
+              defaultCoinIndex={7}
               getCoinValue={(data) => console.log('To coin value:', data)}
             />
           </div>
