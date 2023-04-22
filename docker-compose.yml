@@ -1,0 +1,6 @@
+version: '3.3'
+services:
+    nextjs-docker:
+        ports:
+            - '3000:3000'
+        image: nextjs-docker

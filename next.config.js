@@ -8,6 +8,8 @@ const withPWA = require('next-pwa')({
 });
 
 const nextConfig = withPWA({
+  // output: 'export',
+  output: 'standalone',
   reactStrictMode: true,
   images: {
     domains: ['assets.coingecko.com'],
