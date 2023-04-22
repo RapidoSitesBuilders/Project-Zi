@@ -56,7 +56,7 @@ const SwapPage: NextPageWithLayout = () => {
           <TransactionInfo label={'Offered by'} />
           <TransactionInfo label={'Price Slippage'} value={'1%'} />
           <TransactionInfo label={'Network Fee'} />
-          <TransactionInfo label={'Zi-Network Fee'} />
+          <TransactionInfo label={'Zi-Network Fee'} value={'0.5%'} />
         </div>
         <Button
           size="large"
