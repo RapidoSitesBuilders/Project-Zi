@@ -17,7 +17,7 @@ import '@/assets/css/scrollbar.css';
 import '@/assets/css/globals.css';
 import '@/assets/css/additional.css';
 import '@/assets/css/range-slider.css';
-import { useState, useEffect, use } from 'react';
+import { useState, useEffect } from 'react';
 
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
@@ -32,8 +32,15 @@ type AppPropsWithLayout = AppProps & {
 
 function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
   useEffect(() => {
-    console.log(123);
+    setBackground()
   });
+  
+  const setBackground = () => {
+      const body = document.querySelector('body')
+      if(body) {
+        body.style.backgroundImage = `url(${location.origin}/images/banner_bg.jpg)`
+      }
+  }
   //could remove this if you don't need to page level layout
   const getLayout = Component.getLayout ?? ((page) => page);
   const [queryClient] = useState(() => new QueryClient());
