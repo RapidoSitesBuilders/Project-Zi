@@ -30,9 +30,9 @@ type AppPropsWithLayout = AppProps & {
 // });
 
 function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
-  useEffect(()=>{
-    console.log(123)    
-  })
+  useEffect(() => {
+    console.log(123);
+  });
   //could remove this if you don't need to page level layout
   const getLayout = Component.getLayout ?? ((page) => page);
   const [queryClient] = useState(() => new QueryClient());
