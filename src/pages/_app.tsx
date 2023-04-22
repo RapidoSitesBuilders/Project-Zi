@@ -45,7 +45,7 @@ function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
           name="viewport"
           content="width=device-width, initial-scale=1 maximum-scale=1"
         />
-        <title>Zi Network App</title>
+        <title>Zi-Network</title>
       </Head>
       <QueryClientProvider client={queryClient}>
         <ThemeProvider

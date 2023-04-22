@@ -30,7 +30,7 @@ export default function Logo() {
     >
       <span className="relative flex overflow-hidden">
         {isMounted && isDarkMode && (
-          <Image src={darkLogo} alt="Zi-Network" height={150} priority />
+          <Image src={darkLogo} alt="Zi-Network" height={250} priority />
         )}
         {isMounted && !isDarkMode && (
           <Image src={lightLogo} alt="Zi-Networks" height={24} priority />
