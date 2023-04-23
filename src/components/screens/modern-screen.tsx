@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import { NextSeo } from 'next-seo';
+import { userZntBalance } from '@/components/web3/helper';
 import CoinSlider from '@/components/ui/coin-card';
 import OverviewChart from '@/components/ui/chats/overview-chart';
 import LiquidityChart from '@/components/ui/chats/liquidity-chart';
@@ -11,10 +12,37 @@ import { coinSlideData } from '@/data/static/coin-slide-data';
 import Avatar from '@/components/ui/avatar';
 import TopupButton from '@/components/ui/topup-button';
 
+
 //images
 import AuthorImage from '@/assets/images/zeke.png';
+import { useEffect, useState } from 'react';
 
 export default function ModernScreen() {
+  const [coin, setCoin] = useState(0);
+
+  useEffect(() => {
+    getBalance();
+  })
+
+  const trim = (x: any, decimal: any) => {
+    return x.slice(0, decimal)
+  }
+
+  const numberWithCommas = (x: any) => {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  const getBalance = async () => {
+    const bal = await userZntBalance()
+    if (bal) {
+      if(bal[0]) {
+        const x = numberWithCommas(trim(bal[0].balance, bal[0].decimals))
+        setCoin(x)
+      }
+
+    }
+  }
+
   return (
     <>
       <NextSeo
@@ -37,7 +65,8 @@ export default function ModernScreen() {
               My Balance
             </h3>
             <div className="mb-7 text-center font-medium tracking-tighter text-gray-900 dark:text-white xl:text-2xl 3xl:mb-8 3xl:text-[32px]">
-              $10,86,000
+              {/* $10,86,000 */}
+              {coin}
             </div>
             <TopupButton />
           </div>

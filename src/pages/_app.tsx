@@ -1,6 +1,4 @@
 import type { AppProps } from 'next/app';
-import type { NextPageWithLayout } from '@/types';
-import { znt, dex_top_20 } from '@/data/requests/cgc_api';
 // import { Fira_Code } from 'next/font/google';
 import Head from 'next/head';
 import { ThemeProvider } from 'next-themes';
@@ -34,8 +32,6 @@ type AppPropsWithLayout = AppProps & {
 function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
   useEffect(() => {
     setBackground();
-    znt();
-    dex_top_20();
   });
 
   const setBackground = () => {
