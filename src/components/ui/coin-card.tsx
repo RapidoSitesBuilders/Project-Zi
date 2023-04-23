@@ -37,12 +37,12 @@ export function CoinCard({
       <div className="relative h-20 lg:h-24 xl:h-28 3xl:h-36">
         <Image src={logo} alt={name} height={112} priority />
       </div>
-      <div className="mt-8 mb-2 text-sm font-medium tracking-wider text-gray-900 lg:text-lg 2xl:text-xl 3xl:text-2xl">
+      <div className="text-white-900 mb-2 mt-8 text-sm font-medium tracking-wider lg:text-lg 2xl:text-xl 3xl:text-2xl">
         {balance}
         <span className="uppercase"> {symbol}</span>
       </div>
       <div className="flex items-center justify-between text-xs font-medium 2xl:text-sm">
-        <span className="tracking-wider text-gray-600">{usdBalance} USD</span>
+        <span className="tracking-wider text-gray-900">{usdBalance} USD</span>
         <span
           className={`flex items-center  ${
             isChangePositive ? 'text-green-500' : 'text-red-500'
