@@ -1,5 +1,4 @@
 import type { AppProps } from 'next/app';
-import type { NextPageWithLayout } from '@/types';
 // import { Fira_Code } from 'next/font/google';
 import Head from 'next/head';
 import { ThemeProvider } from 'next-themes';

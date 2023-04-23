@@ -16,7 +16,7 @@ import {
 
 const tabMenu = [
   {
-    title: 'Collection',
+    title: 'Marketplace',
     path: 'collection',
   },
   {

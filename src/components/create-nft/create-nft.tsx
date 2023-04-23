@@ -15,27 +15,50 @@ import ToggleBar from '@/components/ui/toggle-bar';
 import { ChevronDown } from '@/components/icons/chevron-down';
 import { Ethereum } from '@/components/icons/ethereum';
 import { Flow } from '@/components/icons/flow';
+import { Bnb } from '@/components/icons/bnb';
+import { Znt } from '../icons/znt';
+import { Matic } from '@/components/icons/matic';
 import { Warning } from '@/components/icons/warning';
 import { Unlocked } from '@/components/icons/unlocked';
 import Avatar from '@/components/ui/avatar';
 import Preview from '@/components/create-nft/nft-preview';
 
 //images
-import AuthorImage from '@/assets/images/author.jpg';
-import NFT1 from '@/assets/images/nft/nft-1.jpg';
+import AuthorImage from '@/assets/images/logo-cc.png';
+import NFT1 from '@/assets/images/nft/nft-1.png';
 import PriceType from '@/components/create-nft/price-types-props';
 
 const BlockchainOptions = [
   {
     id: 1,
-    name: 'Ethereum',
-    value: 'ethereum',
-    icon: <Ethereum />,
+    name: 'Binance',
+    value: 'BSC',
+    icon: <Bnb />,
   },
   {
     id: 2,
+    name: 'ZNT',
+    value: 'ZNT',
+    icon: <Znt />,
+  },
+
+  {
+    id: 3,
+    name: 'Ethereum',
+    value: 'ETH',
+    icon: <Ethereum />,
+  },
+  {
+    id: 4,
+    name: 'Matic',
+    value: 'MATIC',
+    icon: <Matic />,
+  },
+
+  {
+    id: 5,
     name: 'Flow',
-    value: 'flow',
+    value: 'FLOW',
     icon: <Flow />,
   },
 ];
@@ -50,7 +73,7 @@ export default function CreateNFT() {
     <>
       <NextSeo
         title="Create NFT"
-        description="Criptic - React Next Web3 NFT Crypto Dashboard Template"
+        description="Zi-Network – Next-Gen Blockchain & Crypto Ecosystem"
       />
       <div className="mx-auto w-full sm:pt-0 lg:px-8 xl:px-10 2xl:px-0">
         <div className="mb-6 grid grid-cols-3 gap-12 sm:mb-10">
@@ -108,10 +131,10 @@ export default function CreateNFT() {
                 <Avatar
                   size="sm"
                   image={AuthorImage}
-                  alt="Cameronwilliamson"
+                  alt="Zeke"
                   className="border-white bg-gray-300 ltr:mr-3 rtl:ml-3 dark:bg-gray-400"
                 />
-                @Cameronwilliamson
+                @Zek
               </div>
               <div className="relative block w-full">
                 <Image

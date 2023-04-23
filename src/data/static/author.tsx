@@ -1,5 +1,5 @@
-import CoverImage from '@/assets/images/profile-cover.jpg';
-import AuthorImage from '@/assets/images/author.jpg';
+import CoverImage from '@/assets/images/cover.jpg';
+import AuthorImage from '@/assets/images/zeke.png';
 import { Instagram } from '@/components/icons/brands/instagram';
 import { Twitter } from '@/components/icons/brands/twitter';
 import { Facebook } from '@/components/icons/brands/facebook';
@@ -11,11 +11,10 @@ import User5 from '@/assets/images/avatar/6.png';
 
 export const authorData = {
   id: 157896,
-  name: 'Spy Thirtythree',
-  user_name: 'Cameronwilliamson',
-  wallet_key:
-    '0x9Af568442868356c7aE834A47614600002545476555555555772d9F5B87e9b',
-  created_at: 'November 2021',
+  name: 'Zeke',
+  user_name: 'zi_dev',
+  wallet_key: '0xa3ec6031a97DC7b2FBCE197cC84FBEAd9f9d4e8c',
+  created_at: 'April 2023',
   cover_image: {
     id: 1,
     thumbnail: CoverImage,
@@ -26,9 +25,9 @@ export const authorData = {
     thumbnail: AuthorImage,
     original: AuthorImage,
   },
-  bio: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.',
-  following: '1,504',
-  followers: '1,845',
+  bio: 'Zi-Network is an innovative blockchain platform designed to deliver unparalleled performance and scalability. Combining a unique consensus mechanism, advanced developer tools, and a thriving DeFi ecosystem.',
+  following: '5',
+  followers: '162',
   followed_by: [
     {
       id: 1,
@@ -84,33 +83,33 @@ export const authorData = {
   socials: [
     {
       id: 1,
-      title: '@dontbesovasya',
-      link: 'https://dontbesovasya.io',
+      title: '@zinetwork_org',
+      link: 'https://twitter.com/zinetwork_org',
       icon: <Twitter className="w-4" />,
     },
     {
       id: 2,
-      title: '@dontbesovasya',
-      link: 'https://dontbesovasya.io',
+      title: '@zinetwork_org',
+      link: '',
       icon: <Facebook className="w-4" />,
     },
     {
       id: 3,
-      title: '@dontbesovasya',
-      link: 'https://dontbesovasya.io',
+      title: '@zinetwork_org',
+      link: '',
       icon: <Instagram className="w-4" />,
     },
   ],
   links: [
     {
       id: 1,
-      title: '@dontbesovasya',
-      link: 'https://dontbesovasya.io',
+      title: '@zinetwork_org',
+      link: 'https://twitter.com/zinetwork_org',
     },
     {
       id: 2,
-      title: '@dontbesovasya',
-      link: 'https://dontbesovasya.io',
+      title: '@zinetwork_org',
+      link: 'https://t.me/zi_network',
     },
   ],
 };

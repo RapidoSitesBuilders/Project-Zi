@@ -33,3 +33,11 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 deploy
+
+## More Docs
+
+Cryptic docs [here](https://criptic-doc.vercel.app/).
+
+## CoinGecko Api Docs
+
+cgc docs [here](https://api.geckoterminal.com/docs/index.html).
