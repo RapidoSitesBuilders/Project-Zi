@@ -11,12 +11,13 @@ import User2 from '@/assets/images/avatar/2.png';
 import User3 from '@/assets/images/avatar/3.png';
 import User4 from '@/assets/images/avatar/1.png';
 import User5 from '@/assets/images/avatar/6.png';
-import CollectionImage1 from '@/assets/images/collection/collection-1.jpg';
-import CollectionImage2 from '@/assets/images/collection/collection-2.jpg';
-import CollectionImage3 from '@/assets/images/collection/collection-3.jpg';
-import CollectionImage4 from '@/assets/images/collection/collection-4.jpg';
-import CollectionImage5 from '@/assets/images/collection/collection-5.jpg';
-import CollectionImage6 from '@/assets/images/collection/collection-6.jpg';
+import CollectionImage1 from '@/assets/images/collection/collection-1.png';
+import CollectionImage2 from '@/assets/images/collection/collection-2.png';
+import CollectionImage3 from '@/assets/images/collection/collection-3.png';
+import CollectionImage4 from '@/assets/images/collection/collection-4.png';
+import CollectionImage5 from '@/assets/images/collection/collection-5.png';
+import CollectionImage6 from '@/assets/images/collection/collection-6.png';
+
 export const collections = [
   {
     id: 1,
@@ -28,8 +29,8 @@ export const collections = [
     image: CollectionImage1,
     user: {
       avatar: User1,
-      name: 'Cameronwilliamson',
-      slug: 'cameronwilliamson',
+      name: 'Zi_Network',
+      slug: 'zinenetwork',
     },
   },
   {
@@ -42,8 +43,8 @@ export const collections = [
     image: CollectionImage2,
     user: {
       avatar: User2,
-      name: 'Cameronwilliamson',
-      slug: 'cameronwilliamson',
+      name: 'Zi_Network',
+      slug: 'zinenetwork',
     },
   },
   {
@@ -56,8 +57,8 @@ export const collections = [
     image: CollectionImage3,
     user: {
       avatar: User3,
-      name: 'Cameronwilliamson',
-      slug: 'cameronwilliamson',
+      name: 'Zi_Network',
+      slug: 'zinenetwork',
     },
   },
   {
@@ -70,8 +71,8 @@ export const collections = [
     image: CollectionImage4,
     user: {
       avatar: User4,
-      name: 'Cameronwilliamson',
-      slug: 'cameronwilliamson',
+      name: 'Zi_Network',
+      slug: 'zinenetwork',
     },
   },
   {
@@ -84,8 +85,8 @@ export const collections = [
     image: CollectionImage5,
     user: {
       avatar: User5,
-      name: 'Cameronwilliamson',
-      slug: 'cameronwilliamson',
+      name: 'Zi_Network',
+      slug: 'zinenetwork',
     },
   },
   {
@@ -98,8 +99,8 @@ export const collections = [
     image: CollectionImage6,
     user: {
       avatar: User4,
-      name: 'Cameronwilliamson',
-      slug: 'cameronwilliamson',
+      name: 'Zi_Network',
+      slug: 'zinenetwork',
     },
   },
   {
@@ -112,8 +113,8 @@ export const collections = [
     image: CollectionImage2,
     user: {
       avatar: User1,
-      name: 'Cameronwilliamson',
-      slug: 'cameronwilliamson',
+      name: 'Zi_Network',
+      slug: 'zinenetwork',
     },
   },
   {
@@ -126,8 +127,8 @@ export const collections = [
     image: CollectionImage1,
     user: {
       avatar: User2,
-      name: 'Cameronwilliamson',
-      slug: 'cameronwilliamson',
+      name: 'Zi_Network',
+      slug: 'zinenetwork',
     },
   },
 ];

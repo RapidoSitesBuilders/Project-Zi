@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from '@/components/ui/image';
-import AuthorImage from '@/assets/images/author.jpg';
-import NFT1 from '@/assets/images/nft/nft-1.jpg';
+import AuthorImage from '@/assets/images/logo-cc.png';
+import NFT1 from '@/assets/images/nft/nft-1.png';
 import Avatar from '@/components/ui/avatar';
 
 export default function PreviewContent() {
@@ -15,7 +15,7 @@ export default function PreviewContent() {
             alt="Cameronwilliamson"
             className="border-white bg-gray-300 ltr:mr-3 rtl:ml-3 dark:bg-gray-400"
           />
-          @Cameronwilliamson
+          @Zek
         </div>
         <div className="relative block w-full">
           <Image

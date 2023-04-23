@@ -5,6 +5,7 @@ import { Doge } from '@/components/icons/doge';
 import { Ethereum } from '@/components/icons/ethereum';
 import { Tether } from '@/components/icons/tether';
 import { Usdc } from '@/components/icons/usdc';
+import { Znt } from '@/components/icons/znt';
 
 export const CoinPriceData = [
   {
@@ -85,14 +86,14 @@ export const CoinPriceData = [
     total_volume: 21000000,
   },
   {
-    symbol: 'BTC',
+    symbol: 'Znt',
     market_cap_rank: '8',
-    image: <Bitcoin />,
-    name: 'Bitcoin',
+    image: <Znt />,
+    name: 'Zi-Network',
     current_price: 26861.75,
     price_change_percentage_1h_in_currency: '-0.5',
     price_change_percentage_24h_in_currency: '-4.0',
-    circulating_supply: 19330475,
+    circulating_supply: 500000000,
     total_volume: 21000000,
   },
   {

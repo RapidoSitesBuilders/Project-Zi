@@ -18,9 +18,9 @@ export const nftData = {
   price: 0.2,
   description:
     'Fisherian Runaways, Child of #48 Bat Veil & #42 Screw Nose. This mushroom is the result of the cross-breeding of two original one of a kind generative mushrooms donated back to the Fisherian Runaways project their generous owner.',
-  creator: { id: 1, logo: Avatar1, name: '@Cameronwilliamson', slug: '#' },
-  collection: { id: 1, logo: Avatar3, name: 'Criptic', slug: '#' },
-  owner: { id: 1, logo: Avatar4, name: '@williamson', slug: '#' },
+  creator: { id: 1, logo: Avatar1, name: '@Zek', slug: '#' },
+  collection: { id: 1, logo: Avatar3, name: 'Zi-Network', slug: '#' },
+  owner: { id: 1, logo: Avatar4, name: '@Zek', slug: '#' },
   block_chains: [
     { id: 1, logo: Bitcoin, name: 'Ethereum', slug: '#' },
     { id: 2, logo: Ethereum, name: 'Bitcoin', slug: '#' },
@@ -29,7 +29,7 @@ export const nftData = {
     {
       id: 1,
       label: 'Bid Placed',
-      name: 'ronson',
+      name: 'Zek',
       authorSlug: '#',
       created_at: '2022-01-22T17:26:22.000000Z',
       avatar: Avatar1,
@@ -39,7 +39,7 @@ export const nftData = {
     {
       id: 2,
       label: 'Bid Placed',
-      name: 'Cameron',
+      name: 'Zane',
       authorSlug: '#',
       created_at: '2022-02-22T17:26:22.000000Z',
       avatar: Avatar2,
@@ -49,7 +49,7 @@ export const nftData = {
     {
       id: 3,
       label: 'Bid Placed',
-      name: 'Williamson',
+      name: 'Zack',
       authorSlug: '#',
       created_at: '2022-03-22T17:26:22.000000Z',
       avatar: Avatar3,
@@ -59,7 +59,7 @@ export const nftData = {
     {
       id: 4,
       label: 'Bid Placed',
-      name: 'ronson',
+      name: 'Zander',
       authorSlug: '#',
       created_at: '2022-01-22T17:26:22.000000Z',
       avatar: Avatar4,
@@ -69,7 +69,7 @@ export const nftData = {
     {
       id: 5,
       label: 'Bid Placed',
-      name: 'Cameron',
+      name: 'Zek',
       authorSlug: '#',
       created_at: '2022-02-22T17:26:22.000000Z',
       avatar: Avatar5,
@@ -79,7 +79,7 @@ export const nftData = {
     {
       id: 6,
       label: 'Bid Placed',
-      name: 'Williamson',
+      name: 'Zane',
       authorSlug: '#',
       created_at: '2022-03-22T17:26:22.000000Z',
       avatar: Avatar6,
@@ -91,7 +91,7 @@ export const nftData = {
     {
       id: 1,
       label: 'Minted',
-      name: 'Williamson',
+      name: 'Zander',
       authorSlug: '#',
       created_at: '2022-03-22T17:26:22.000000Z',
       avatar: Avatar3,
@@ -101,7 +101,7 @@ export const nftData = {
     {
       id: 2,
       label: 'Listed',
-      name: 'Cameron',
+      name: 'Zeke',
       authorSlug: '#',
       created_at: '2022-02-22T17:26:22.000000Z',
       avatar: Avatar2,
@@ -111,7 +111,7 @@ export const nftData = {
     {
       id: 3,
       label: 'Bid Placed',
-      name: 'ronson',
+      name: 'Zane',
       authorSlug: '#',
       created_at: '2022-01-22T17:26:22.000000Z',
       avatar: Avatar1,

@@ -1,13 +1,13 @@
-import AuthorImage from '@/assets/images/author.jpg';
-import NFT1 from '@/assets/images/nft/nft-1.jpg';
-import NFT2 from '@/assets/images/nft/nft-2.jpg';
-import NFT3 from '@/assets/images/nft/nft-3.jpg';
-import NFT4 from '@/assets/images/nft/nft-4.jpg';
+import AuthorImage from '@/assets/images/logo-cc.png';
+import NFT1 from '@/assets/images/nft/nft-1.png';
+import NFT2 from '@/assets/images/nft/nft-2.png';
+import NFT3 from '@/assets/images/nft/nft-3.png';
+import NFT4 from '@/assets/images/nft/nft-4.png';
 
 export const NFTList = [
   {
     id: 1,
-    author: 'cameronwilliamson',
+    author: 'Zek',
     authorImage: AuthorImage,
     image: NFT1,
     name: 'Pulses Of Imagination #214',
@@ -16,7 +16,7 @@ export const NFTList = [
   },
   {
     id: 2,
-    author: 'cameronwilliamson',
+    author: 'Zek',
     authorImage: AuthorImage,
     image: NFT2,
     name: 'Pulses Of Imagination #214',
@@ -25,7 +25,7 @@ export const NFTList = [
   },
   {
     id: 3,
-    author: 'cameronwilliamson',
+    author: 'Zek',
     authorImage: AuthorImage,
     image: NFT3,
     name: 'Imagination of Pulses',
@@ -34,7 +34,7 @@ export const NFTList = [
   },
   {
     id: 4,
-    author: 'cameronwilliamson',
+    author: 'Zek',
     authorImage: AuthorImage,
     image: NFT4,
     name: 'Pulses Of Imagination #214',
@@ -43,7 +43,7 @@ export const NFTList = [
   },
   {
     id: 5,
-    author: 'cameronwilliamson',
+    author: 'Zek',
     authorImage: AuthorImage,
     image: NFT2,
     name: 'Pulses Of Imagination #214',
@@ -52,7 +52,7 @@ export const NFTList = [
   },
   {
     id: 6,
-    author: 'cameronwilliamson',
+    author: 'Zek',
     authorImage: AuthorImage,
     image: NFT4,
     name: 'Pulses Of Imagination #214',
@@ -61,7 +61,7 @@ export const NFTList = [
   },
   {
     id: 7,
-    author: 'cameronwilliamson',
+    author: 'Zek',
     authorImage: AuthorImage,
     image: NFT3,
     name: 'Pulses Of Imagination #214',
@@ -70,7 +70,7 @@ export const NFTList = [
   },
   {
     id: 8,
-    author: 'cameronwilliamson',
+    author: 'Zek',
     authorImage: AuthorImage,
     image: NFT1,
     name: 'Pulses Of Imagination #214',
