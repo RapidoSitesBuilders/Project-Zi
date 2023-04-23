@@ -1,8 +1,8 @@
 export const FarmsData = [
   {
     id: 1,
-    from: 'BTC',
-    to: 'ETH',
+    from: 'BNB',
+    to: 'ZNT',
     earned: '0',
     apr: '29.72%',
     liquidity: '$232,941,720',
@@ -11,7 +11,7 @@ export const FarmsData = [
   {
     id: 2,
     from: 'USDT',
-    to: 'BNB',
+    to: 'ZNT',
     earned: '0',
     apr: '25.20%',
     liquidity: '$132,941,720',
@@ -20,7 +20,7 @@ export const FarmsData = [
   {
     id: 3,
     from: 'USDC',
-    to: 'DOGE',
+    to: 'ZNT',
     earned: '0',
     apr: '33.73%',
     liquidity: '$332,941,720',
@@ -29,7 +29,7 @@ export const FarmsData = [
   {
     id: 4,
     from: 'BTC',
-    to: 'ADA',
+    to: 'ZNT',
     earned: '0',
     apr: '10.73%',
     liquidity: '$232,941,720',
@@ -38,7 +38,7 @@ export const FarmsData = [
   {
     id: 5,
     from: 'BNB',
-    to: 'USDC',
+    to: 'ZNT',
     earned: '0',
     apr: '20.73%',
     liquidity: '$132,941,720',
@@ -47,7 +47,7 @@ export const FarmsData = [
   {
     id: 6,
     from: 'ETH',
-    to: 'ADA',
+    to: 'ZNT',
     earned: '0',
     apr: '20.73%',
     liquidity: '$132,941,720',
