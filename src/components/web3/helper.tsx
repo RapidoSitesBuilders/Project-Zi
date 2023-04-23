@@ -1,5 +1,5 @@
 import Moralis from "moralis";
-import { secrets } from '@/secrets';
+// import { secrets } from '@/secrets';
 
 export function userAddress() {
     // return web3.currentProvider.selectedAddress ?? false
@@ -9,7 +9,7 @@ export function userAddress() {
 export async function userZntBalance() {
     try {
         await Moralis.start({
-            apiKey: secrets.MORALIS_KEY
+            apiKey: 'WqyjIPC30T4PAopp11a6lPh5pKs27CqNTJRfpYH5BjJprnrdgop7EL091vRMa211'
         });
 
         const response = await Moralis.EvmApi.token.getWalletTokenBalances({
