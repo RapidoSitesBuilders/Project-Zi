@@ -37,7 +37,7 @@ export const coinSlideData = [
     logo: CardanoImage,
     change: '+12.5%',
     isChangePositive: true,
-    color: 'rgb(100 0 182)',
+    color: '#2A53CD',
   },
   {
     id: '3',
@@ -48,7 +48,7 @@ export const coinSlideData = [
     logo: BitcoinImage,
     change: '+12.5%',
     isChangePositive: true,
-    color: '#ffda00',
+    color: 'rgb(248 141 0)',
   },
   {
     id: '4',
@@ -59,6 +59,6 @@ export const coinSlideData = [
     logo: TetherImage,
     change: '+1.5%',
     isChangePositive: true,
-    color: 'rgb(90 146 62)',
+    color: '#1BA27A',
   },
 ];

@@ -13,7 +13,7 @@ const LiquidityPage: NextPageWithLayout = () => {
     <>
       <NextSeo
         title="Liquidity"
-        description="Criptic - React Next Web3 NFT Crypto Dashboard Template"
+        description="Zi-Network – Next-Gen Blockchain & Crypto Ecosystem"
       />
       <Trade>
         <div className="mb-5 border-b border-dashed border-gray-200 pb-5 dark:border-gray-800 xs:mb-7 xs:pb-6">
