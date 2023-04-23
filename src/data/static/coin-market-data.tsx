@@ -6,6 +6,38 @@ import { Ethereum } from '@/components/icons/ethereum';
 import { Tether } from '@/components/icons/tether';
 import { Usdc } from '@/components/icons/usdc';
 import { Znt } from '@/components/icons/znt';
+import { dex_top_20 } from '../requests/cgc_api';
+
+let coinPriceData = []
+
+const fetchCoins = async () => {
+  const coins = await dex_top_20()
+  if (coins) {
+    // console.log(coins)
+    // return coins
+
+    coins.data.forEach(coin => {
+      // console.log(coin)
+
+      coinPriceData.push({
+        symbol: coin.attributes.name,
+        market_cap_rank: null,
+        image: null,
+        name: null,
+        current_price: coin.attributes.quote_token_price_usd,
+        price_change_percentage_1h_in_currency: null,
+        price_change_percentage_24h_in_currency: null,
+        circulating_supply: null,
+        total_volume: null,
+      })
+    });
+    // console.log(coinPriceData)
+    
+  }
+}
+
+fetchCoins()
+// export const CoinPriceData = coinPriceData
 
 export const CoinPriceData = [
   {
@@ -240,6 +272,8 @@ export const CoinPriceData = [
     total_volume: 21000000,
   },
 ];
+
+// export const coinPriceData = await coinPr
 
 export const CoinMarketData = [
   {

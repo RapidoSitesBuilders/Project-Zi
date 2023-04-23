@@ -16,7 +16,7 @@ export function dex_top_20() {
         fetch('https://api.geckoterminal.com/api/v2/networks/bsc/dexes/pancakeswap_v2/pools')
             .then((res) => res.json())
             .then((data) => {
-                console.log('dex_top_20', data)
+                // console.log('dex_top_20', data)
                 return data
             })
 

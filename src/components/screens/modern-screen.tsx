@@ -25,7 +25,7 @@ export default function ModernScreen() {
   })
 
   const trim = (x: any, decimal: any) => {
-    return x.slice(0, decimal)
+    return x.slice(0, -decimal)
   }
 
   const numberWithCommas = (x: any) => {
@@ -37,6 +37,7 @@ export default function ModernScreen() {
     if (bal) {
       if(bal[0]) {
         const x = numberWithCommas(trim(bal[0].balance, bal[0].decimals))
+        console.log(bal[0].balance)
         setCoin(x)
       }
 

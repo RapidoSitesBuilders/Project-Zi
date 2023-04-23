@@ -1,5 +1,5 @@
 import Moralis from "moralis";
-import { secrets } from '../../../secrets';
+import { secrets } from '@/secrets';
 
 export function userAddress() {
     // return web3.currentProvider.selectedAddress ?? false
