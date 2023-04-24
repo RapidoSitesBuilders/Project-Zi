@@ -8,15 +8,15 @@ import { Usdc } from '@/components/icons/usdc';
 import { Znt } from '@/components/icons/znt';
 import { dex_top_20 } from '../requests/cgc_api';
 
-let coinPriceData = []
+let coinPriceData = [];
 
 const fetchCoins = async () => {
-  const coins = await dex_top_20()
+  const coins = await dex_top_20();
   if (coins) {
     // console.log(coins)
     // return coins
 
-    coins.data.forEach(coin => {
+    coins.data.forEach((coin) => {
       // console.log(coin)
 
       coinPriceData.push({
@@ -29,14 +29,13 @@ const fetchCoins = async () => {
         price_change_percentage_24h_in_currency: null,
         circulating_supply: null,
         total_volume: null,
-      })
+      });
     });
     // console.log(coinPriceData)
-    
   }
-}
+};
 
-fetchCoins()
+fetchCoins();
 // export const CoinPriceData = coinPriceData
 
 export const CoinPriceData = [
