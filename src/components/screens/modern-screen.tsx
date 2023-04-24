@@ -25,7 +25,7 @@ export default function ModernScreen() {
   });
 
   const trim = (x: any, decimal: any) => {
-    return x.slice(0, decimal);
+    return x.slice(0, -decimal);
   };
 
   const numberWithCommas = (x: any) => {
