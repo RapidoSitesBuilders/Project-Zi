@@ -5,6 +5,7 @@ import { useIsMounted } from '@/lib/hooks/use-is-mounted';
 import CryptocurrencyAccordionTable from '@/components/cryptocurrency-pricing-table/cryptocurrency-accordion-table';
 import CryptocurrencyDrawerTable from '@/components/cryptocurrency-pricing-table/cryptocurrency-drawer-table';
 import { CoinPriceData } from '@/data/static/coin-market-data';
+import { erc20Metadata } from '@/components/web3/helper'
 
 const COLUMNS = [
   {
@@ -103,15 +104,55 @@ const COLUMNS = [
   },
 ];
 
+const fetchCoins = async () => {
+  const coins = await erc20Metadata();
+  let coinPriceData = []
+
+  if(coins) {
+    // console.log(coins)
+    coins.forEach((coin) => {
+      coinPriceData.push({
+        symbol: coin.symbol,
+        market_cap_rank: coin.rank,
+        image: coin.logo,
+        name: coin.name,
+        current_price: coin.pool.attributes.quote_token_price_usd,
+        price_change_percentage_1h_in_currency: null,
+        price_change_percentage_24h_in_currency: null,
+        circulating_supply: null,
+        total_volume: null,
+      });
+    });
+  }
+  
+  // console.log(131, coinPriceData)
+  return coinPriceData;
+};
+
 export default function CryptocurrencyPricingTable() {
   // const { coins } = useCoins();
   // const data = React.useMemo(() => coins, [coins]);
-  const data = React.useMemo(() => CoinPriceData, []);
+  // console.log(33333, fetchCoins())
+  // const yawa = React.useMemo(() => fetchCoins(), []);
+  // console.log(yawa)
+
+  const [data, setData] = React.useState([])
+
+  // let data = []
+  React.useEffect(() => {
+    fetchCoins().then(coins => {
+      console.log('coins rendered')  
+      setData(coins)
+    })
+  }, [])
+
+
   const columns = React.useMemo(() => COLUMNS, []);
 
   const isMounted = useIsMounted();
   const breakpoint = useBreakpoint();
 
+  
   return isMounted &&
     ['xs', 'sm', 'md', 'lg', 'xl'].indexOf(breakpoint) !== -1 ? (
     <CryptocurrencyDrawerTable columns={columns} data={data} />

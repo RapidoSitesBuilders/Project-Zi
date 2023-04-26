@@ -66,7 +66,7 @@ function CoinPrices() {
           description="Criptic - React Next Web3 NFT Crypto Dashboard Template"
         />
         <LivePricingSliderRetro limits={3} />
-        <CryptocurrencyPricingRetroTable />
+        {/* <CryptocurrencyPricingRetroTable /> */}
       </>
     );
   }
