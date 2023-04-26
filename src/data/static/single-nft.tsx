@@ -1,4 +1,4 @@
-import SingleNft from '@/assets/images/single-nft.jpg';
+import SingleNft from '@/assets/images/nft/nft-1.png';
 
 import Bitcoin from '@/assets/images/currency/bitcoin.svg';
 import Ethereum from '@/assets/images/currency/ethereum.svg';

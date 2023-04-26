@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app';
 // import { Fira_Code } from 'next/font/google';
+import { startMoralis } from '@/components/web3/helper';
 import Head from 'next/head';
 import { ThemeProvider } from 'next-themes';
 import { QueryClient, QueryClientProvider } from 'react-query';
@@ -32,6 +33,7 @@ type AppPropsWithLayout = AppProps & {
 function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
   useEffect(() => {
     setBackground();
+    startMoralis();
   });
 
   const setBackground = () => {
